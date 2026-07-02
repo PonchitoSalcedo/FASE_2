@@ -1,13 +1,5 @@
+## 📝 **CÓDIGO COMPLETO**
 
-**Las tres comillas invertidas DEBEN estar al inicio y al final del bloque, y la palabra `bash` debe estar pegada a las primeras tres comillas (sin espacio).**
-
----
-
-## 📝 **CÓDIGO COMPLETO CORREGIDO PARA EL README**
-
-**Copia y pega EXACTAMENTE este contenido en tu `README.md`** (reemplaza todo el contenido anterior):
-
-````markdown
 # 🚀 Sistema de Predicción ML con Docker
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
@@ -58,16 +50,12 @@ Aplicación completa de **Machine Learning** con frontend (Streamlit) y backend 
 
 ### 1. Clonar el repositorio
 
-```bash
 git clone https://github.com/PonchitoSalcedo/FASE_2.git
 cd FASE_2
-```
 
 ### 2. Ejecutar con Docker Compose
 
-```bash
 docker-compose up --build
-```
 
 ### 3. Acceder a la aplicación
 
@@ -81,7 +69,6 @@ docker-compose up --build
 
 ## 📁 Estructura del Proyecto
 
-```
 FASE_2/
 ├── backend/
 │   ├── app/
@@ -107,7 +94,6 @@ FASE_2/
 ├── .env.example
 ├── .gitignore
 └── README.md
-```
 
 ---
 
@@ -115,23 +101,19 @@ FASE_2/
 
 ### Backend (FastAPI)
 
-```bash
 cd backend
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
 
 ### Frontend (Streamlit)
 
-```bash
 cd frontend
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 streamlit run app/main.py --server.port=8501 --server.address=0.0.0.0
-```
 
 ---
 
@@ -139,10 +121,8 @@ streamlit run app/main.py --server.port=8501 --server.address=0.0.0.0
 
 ### Google Cloud Run
 
-```bash
 gcloud builds submit --tag gcr.io/PROJECT_ID/ml-app
 gcloud run deploy ml-app --image gcr.io/PROJECT_ID/ml-app --platform managed
-```
 
 ---
 
@@ -159,7 +139,6 @@ gcloud run deploy ml-app --image gcr.io/PROJECT_ID/ml-app --platform managed
 
 ### Ejemplo de Uso
 
-```python
 import requests
 
 data = {
@@ -170,17 +149,15 @@ data = {
 }
 response = requests.post("http://localhost:8000/predict", json=data)
 print(response.json())
-```
 
 ---
 
 ## 🧪 Pruebas
 
-```bash
 cd tests
 python test_model.py
 python test_api.py
-```
+
 
 ---
 
