@@ -67,36 +67,6 @@ docker-compose up --build
 
 ---
 
-## 📁 Estructura del Proyecto
-
-FASE_2/
-├── backend/
-│   ├── app/
-│   │   └── main.py
-│   ├── requirements.txt
-│   └── Dockerfile
-├── frontend/
-│   ├── app/
-│   │   └── main.py
-│   ├── requirements.txt
-│   └── Dockerfile
-├── models/
-│   └── model.pkl
-├── tests/
-│   ├── test_model.py
-│   └── test_api.py
-├── docs/
-│   ├── manual_despliegue.md
-│   └── validacion_pruebas.md
-├── nginx/
-│   └── nginx.conf
-├── docker-compose.yml
-├── .env.example
-├── .gitignore
-└── README.md
-
----
-
 ## 💻 Desarrollo Local
 
 ### Backend (FastAPI)
